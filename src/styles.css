@@ -1,11 +1,63 @@
+:root {
+  --primary-color: #007aa2;
+  --secondary-color: #8ab1c4;
+  --tertiary-color: #accfe1;
+  --accent-color-pink: #ea493f;
+  --accent-color-brown: #ac7447;
+  --accent-color-nude: #f4c7a7;
+  --accent-color-grey: #f1eef1;
+  --box-shadow: 0px 7px 9px 1px rgba(0, 0, 0, 0.53);
+  --lighter-text-color: rgb(73, 73, 73);
+}
+
 body {
-  color: blueviolet;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 h1 {
   font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 96px;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
+h2 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+h3 {
+  font-weight: regular;
+  font-size: 30px;
+  color: var(--lighter-text-color);
+}
+
+.hero {
+  background-color: var(--tertiary-color);
+  height: 100%;
+  padding: 120px 60px;
+}
+
+.introduction {
+  margin: 120px auto 60px;
+}
+
+.name {
+  text-shadow: 5px 3px 2px var(--secondary-color);
+}
+
+.contact-button {
+  font-weight: medium;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 1em;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-button:hover {
+  color: white;
+  box-shadow: var(--box-shadow);
 }
