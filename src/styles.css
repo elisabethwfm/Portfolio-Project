@@ -191,6 +191,47 @@ footer a:hover {
   text-align: justify;
 }
 
+/* work.html */
+.h1-work {
+  font-size: 64px;
+  text-align: center;
+}
+
+.introduction-work {
+  margin: 120px auto 60px;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  margin: 30px 200px 40px;
+}
+
+.work-wrapper {
+  grid-column: span 1;
+  align-self: center;
+}
+
+.img-work {
+  grid-column: span 1;
+  width: 100%;
+  align-self: center;
+  border: 20px solid var(--img-background);
+  padding: 20px;
+  margin: auto 0;
+}
+
+.work-p {
+  padding-bottom: 50px;
+  margin: 10px;
+  text-align: center;
+}
+
+.h3-work {
+  padding: 10px 0 0;
+}
+
 /* media queries homepage */
 @media (max-width: 576px) {
   h1 {
@@ -220,12 +261,29 @@ footer a:hover {
 
 /* media queries about me */
 @media (max-width: 576px) {
+  .h1-work {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    column-gap: 20px;
+    margin: 0 20px 40px;
+  }
+}
+
+/* media queries work */
+@media (max-width: 576px) {
   h1 {
     font-size: 70px;
   }
 }
-@media (max-width: 950px) {
-  .about-container {
+
+@media (max-width: 1200px) {
+  .work-container {
     grid-template-columns: repeat(1, 1fr);
     display: grid;
     column-gap: 20px;
