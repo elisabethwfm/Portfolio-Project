@@ -179,6 +179,8 @@ footer a:hover {
   grid-column: span 1;
   width: 100%;
   align-self: center;
+  border: 20px solid var(--img-background);
+  padding: 20px;
 }
 
 .about-p {
