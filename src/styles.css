@@ -107,12 +107,14 @@ img {
   transform: translateX(102.5%);
   border: 20px solid var(--img-background);
   padding: 20px;
+  align-self: center;
 }
 
 .image-left {
   grid-column: span 1;
   border: 20px solid var(--img-background);
   padding: 20px;
+  align-self: center;
 }
 
 .text-left {
