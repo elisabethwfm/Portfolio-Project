@@ -100,21 +100,19 @@ p.intro-main {
 img {
   height: auto;
   width: 100%;
-  padding: 40px;
-  border-radius: 2px;
 }
 
 .image-right {
   grid-column: span 1;
   transform: translateX(102.5%);
-  background-color: var(--img-background);
-  border-radius: 2px;
+  border: 20px solid var(--img-background);
+  padding: 20px;
 }
 
 .image-left {
   grid-column: span 1;
-  background-color: var(--img-background);
-  border-radius: 2px;
+  border: 20px solid var(--img-background);
+  padding: 20px;
 }
 
 .text-left {
