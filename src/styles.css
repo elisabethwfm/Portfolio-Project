@@ -118,14 +118,19 @@ img {
   grid-column: span 1;
   transform: translateX(-102.5%);
   width: 100%;
+  align-self: center;
 }
 
 .text-right {
   grid-column: span 1;
+  width: 100%;
+  align-self: center;
 }
 
 .project-p {
   padding-bottom: 50px;
+  margin: 20px;
+  text-align: justify;
 }
 
 .learn-btn {
@@ -158,7 +163,7 @@ footer a:hover {
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 
