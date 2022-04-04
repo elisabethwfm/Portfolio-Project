@@ -47,6 +47,7 @@ h3 {
   background-color: var(--tertiary-color);
   height: 100%;
   padding: 120px 60px;
+  align-self: center;
   align-items: center;
 }
 
@@ -55,6 +56,9 @@ h3 {
 }
 
 .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-shadow: 5px 3px 2px var(--secondary-color);
 }
 
@@ -111,4 +115,10 @@ img {
 .text-left {
   transform: translateX(-102.5%);
   width: 100%;
+}
+
+@media (max-width: 549px) {
+  h1 {
+    font-size: 80px;
+  }
 }
