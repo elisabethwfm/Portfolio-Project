@@ -215,11 +215,13 @@ footer a:hover {
 
 .img-work {
   grid-column: span 1;
-  width: 100%;
   align-self: center;
   border: 20px solid var(--img-background);
   padding: 20px;
   margin: auto 0;
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
 }
 
 .work-p {
