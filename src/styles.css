@@ -171,9 +171,14 @@ img {
   font-size: 50px;
 }
 
+.lets-talk {
+  display: flex;
+}
+
 .lets-talk a {
   font-weight: medium;
   font-size: 18px;
+  margin: 10px;
   text-decoration: none;
   padding: 1em;
   background-color: var(--primary-color);
@@ -309,7 +314,7 @@ h4 {
 }
 
 /* nav-bar */
-span nav {
+span {
   font-size: 40px;
 }
 
