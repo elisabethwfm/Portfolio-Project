@@ -170,7 +170,8 @@ footer a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
-  margin: 0 20px 40px;
+  margin: 0px 20px 40px;
+  padding-top: 40px;
 }
 
 .introduction-about {
@@ -200,6 +201,7 @@ footer a:hover {
 
 .introduction-work {
   margin: 120px auto 60px;
+  padding-top: 40px;
 }
 
 .work-container {
