@@ -309,6 +309,7 @@ ul {
   height: 2px;
   background-color: var(--white-text);
   margin: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 /* media queries homepage */
@@ -417,7 +418,7 @@ ul {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg translate(-5px, 6px));
+  transform: rotate(-45deg) translate(-5px, 5px);
 }
 
 .toggle .line2 {
@@ -425,5 +426,5 @@ ul {
 }
 
 .toggle .line3 {
-  transform: rotate(45deg translate(-5px, -6px));
+  transform: rotate(45deg) translate(-5px, -5px);
 }
