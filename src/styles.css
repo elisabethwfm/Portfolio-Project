@@ -165,6 +165,22 @@ footer a:hover {
   color: var(--primary-color);
 }
 
+.fa-brands {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin: 20px;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: var(--img-background);
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+}
+
+.fa-brands:hover {
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+}
+
 /* about.html */
 .about-container {
   display: grid;
