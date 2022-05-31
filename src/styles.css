@@ -310,6 +310,13 @@ footer a:hover {
   text-align: center;
 }
 
+.project-p {
+  padding-bottom: 50px;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
 .h3-work {
   padding: 10px 0 0;
 }
@@ -325,6 +332,15 @@ footer a:hover {
 }
 
 .contact-info a:hover {
+  color: var(--primary-color-dark);
+}
+
+.project-link {
+  color: var(--accent-color-brown);
+  text-decoration: none;
+}
+
+.project-link:hover {
   color: var(--primary-color-dark);
 }
 
