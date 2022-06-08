@@ -18,6 +18,8 @@
   --box-shadow: 0px 7px 9px 1px rgba(0, 0, 0, 0.05);
   --lighter-text-color: rgb(73, 73, 73);
   --secondary-color: #edf7fd5a;
+  --typeWriterSpeed: 2.8s;
+  --typeWriterSteps: 18;
 }
 
 /* :root {
@@ -44,10 +46,93 @@ body {
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "PT Mono", monospace; /* changed the font, so the typewriter would work*/
   font-weight: bold;
   font-size: 96px;
   margin: 0 auto;
+  position: relative;
+}
+
+.name {
+  padding-bottom: 20px;
+}
+
+.name::before,
+.name::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.name::before {
+  background-color: var(--vierte-color);
+  animation: typewriter var(--typeWriterSpeed) steps(var(--typeWriterSteps)) 1s
+    forwards;
+}
+
+.name::after {
+  width: 0.075em;
+  height: 80%;
+  background-color: black;
+  animation: typewriter var(--typeWriterSpeed) steps(var(--typeWriterSteps)) 1s
+      forwards,
+    blink 750ms steps(18) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.wave {
+  animation-name: waving;
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes waving {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(20deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  70% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 h2 {
@@ -60,6 +145,21 @@ h3 {
   font-size: 30px;
   color: var(--lighter-text-color);
   padding-bottom: 50px;
+}
+
+h3.developer {
+  padding-bottom: 0;
+}
+
+.developer {
+  opacity: 0;
+  animation: fadeIn 2s ease calc(var(--typeWriterSpeed) + 1s) forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .hero {
