@@ -540,6 +540,21 @@ ul {
   .h1-work {
     font-size: 50px;
   }
+}
+
+@media (max-width: 950px) {
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    column-gap: 20px;
+    margin: 0 20px 40px;
+  }
+}
+
+@media (max-width: 1156px) {
+  .name {
+    width: min-content;
+  }
 
   .name::before,
   .name::after {
@@ -553,24 +568,15 @@ ul {
 
   .name::before {
     background-color: var(--vierte-color);
-    animation: typewriter var(--typeWriterSpeed) steps(9) 1s forwards;
+    animation: typewriter 1.5s steps(9) 1s forwards;
   }
 
   .name::after {
     width: 0.075em;
     height: 80%;
     background-color: black;
-    animation: typewriter var(--typeWriterSpeed) steps(9) 1s forwards,
+    animation: typewriter 1.5s steps(9) 1s forwards,
       blink 750ms steps(18) infinite;
-  }
-}
-
-@media (max-width: 950px) {
-  .about-container {
-    grid-template-columns: repeat(1, 1fr);
-    display: grid;
-    column-gap: 20px;
-    margin: 0 20px 40px;
   }
 }
 
