@@ -540,6 +540,29 @@ ul {
   .h1-work {
     font-size: 50px;
   }
+
+  .name::before,
+  .name::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .name::before {
+    background-color: var(--vierte-color);
+    animation: typewriter var(--typeWriterSpeed) steps(9) 1s forwards;
+  }
+
+  .name::after {
+    width: 0.075em;
+    height: 80%;
+    background-color: black;
+    animation: typewriter var(--typeWriterSpeed) steps(9) 1s forwards,
+      blink 750ms steps(18) infinite;
+  }
 }
 
 @media (max-width: 950px) {
